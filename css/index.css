@@ -11,7 +11,9 @@ header {
     grid-template-columns: auto 1fr auto; /* Logo - Navegación - Ícono de brillo */
     align-items: center;
 }
-
+main{
+    padding: 20px;
+}
 .logo {
     max-width: 100%;
     height: 70px;
@@ -23,7 +25,6 @@ header {
 
 .navegacion_principal ul {
     list-style: none;
-    padding-top: 10px;
     padding: 0;
     display: grid;
     grid-auto-flow: column;
@@ -51,3 +52,65 @@ header {
         justify-self: center; /* Alinea la navegación al centro en pantallas pequeñas */
     }
 }
+
+.menu {
+    margin-top: 40px;
+    display: grid;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Hacer que los elementos se ajusten al ancho de la pantalla */
+    gap: 15px;
+    padding: 7px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.menu_categorias {
+    justify-self: center;
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos a la izquierda */
+
+}
+
+.menu_categorias a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px; /* Agrega espacio entre los elementos */
+}
+
+@media (max-width: 750px) {
+    .menu_categorias {
+        justify-content: center; /* Centra los elementos en dispositivos móviles */
+        padding-left: 0; /* Elimina el relleno a la izquierda en dispositivos móviles */
+    }
+}
+
+/* Estilos para la rejilla de productos destacados */
+.contenedor_productos {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para las cartas de productos */
+.producto {
+    border: 0.5px solid;
+    border-color:#2a2a2a;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover{
+    transform: scaleX(1.1);
+}
+.producto img {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
