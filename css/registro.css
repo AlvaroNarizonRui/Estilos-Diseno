@@ -1,13 +1,20 @@
 /* Estilos generales */
-header{
+header {
     text-align: center;
     background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Logo - Navegación - Ícono de brillo */
+    align-items: center;
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #333;
+    color: #ffffff;
 }
 
 .container {
@@ -25,7 +32,8 @@ body {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f0f0f0;
+    background-color: #1e1e1e;
+    color: #ffffff;
 }
 
 .form-group {
@@ -35,15 +43,18 @@ body {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #333; /* Color del texto del label */
+    color: #ffffff; /* Color del texto del label */
 }
 
+input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+textarea {
     width: calc(100% - 20px); /* Ajusta el ancho del input */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #ffffff;
 }
 
 button {
@@ -71,4 +82,5 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 

@@ -1,22 +1,28 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
 }
 main{
     min-height: 777px;
 }
 
 header {
-    background-color: #2a2a2a;
-    color: white;
+    background-color:#2a2a2a;
+    color: #ffffff;
     padding: 10px;
     display: grid;
     grid-template-columns: auto 1fr auto; /* Logo - Navegación - Ícono de brillo */
     align-items: center;
 }
-main{
+
+main {
     padding: 20px;
+    background-color: #1e1e1e;
+    color: #ffffff;
 }
+
 .logo {
     max-width: 100%;
     height: 70px;
@@ -25,7 +31,8 @@ main{
 .navegacion_principal {
     justify-self: end; /* Alinea la navegación al borde derecho */
 }
-.homeimagen{
+
+.homeimagen {
     padding-top: 10px;
     margin-right: 10px;
 }
@@ -40,7 +47,7 @@ main{
 }
 
 .navegacion_principal a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -63,13 +70,13 @@ main{
 .menu {
     margin-top: 40px;
     display: grid;
-    color: black;
-    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+    background-color: #1e1e1e;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Hacer que los elementos se ajusten al ancho de la pantalla */
     gap: 15px;
     padding: 7px;
     border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .menu_categorias {
@@ -79,7 +86,7 @@ main{
 
 .menu_categorias a {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     margin-right: 10px; /* Agrega espacio entre los elementos */
 }
 
@@ -88,7 +95,8 @@ main{
         justify-content: center; /* Centra los elementos en dispositivos móviles */
         padding-left: 0; /* Elimina el relleno a la izquierda en dispositivos móviles */
     }
-    .producto img{
+
+    .producto img {
         min-height: 40%;
     }
 }
@@ -100,6 +108,8 @@ main{
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
+    background-color: #1e1e1e;
+    color: #ffffff;
 }
 
 /* Estilos para las cartas de productos */
@@ -107,17 +117,18 @@ main{
     border-radius: 5px;
     border-style: solid;
     border-width: 0.1px;
-    border-color:#2a2a2a50;
+    border-color: #ffffff50;
     text-align: center;
     justify-content: center;
-    background-color: #f5f5f5;
+    background-color: #2a2a2a;
     padding: 0;
     transition: transform 0.3s ease;
 }
 
-.producto:hover{
+.producto:hover {
     transform: scaleX(1.1);
 }
+
 .producto img {
     margin: 0;
     max-height: 60%;
@@ -127,23 +138,26 @@ main{
     object-fit: cover;
 }
 
-.contenedor_boton{
+.contenedor_boton {
     width: 100%;
     height: 10%;
     padding: 0;
-    color: white;
+    color: #ffffff;
     font-weight: bolder;
     text-align: center;
     justify-self: center;
     background-color: #3b3b3b;
     border: none;
 }
-.contenedor_boton:hover{
+
+.contenedor_boton:hover {
     background-color: #3b3b3ba8;
 }
+
 footer {
-    background-color: #2a2a2a;
+    background-color: #121212;
     color: #727272;
     text-align: center;
     padding: 20px;
+    bottom: 0;
 }
